@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    tools:openDrawer ="start">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.panta.farmakio_client.Profile"
+    android:background="@color/lightgreen"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/green">
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/empty_profile" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name and Surname"
+            android:textColor="@color/white"
+
+            android:textSize="21sp"/>
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_email_black_24dp" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="xxxxx@yyyy.com"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:onClick="EditEmail"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/ic_edit_black_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_phone_android_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvPhone"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="+357 XX XXX XXX"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="50dp"
+                android:onClick="EditPhone"
+                android:src="@drawable/ic_edit_black_24dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttonstyleithgradient"
+        android:onClick="EditPass"
+        android:text="CHANGE PASSWORD"
+        android:textColor="#57873D" />
+
+    <!-- This is the past orders -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="ORDER ID.XXX XXX XX/XX/XXXX"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_marginLeft="60dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:onClick="pastOrder1"
+                android:src="@drawable/ic_reorder" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="ORDER ID.XXX XXX XX/XX/XXXX"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_marginLeft="60dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:onClick="pastOrder2"
+                android:src="@drawable/ic_reorder" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="ORDER ID.XXX XXX XX/XX/XXXX"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_marginLeft="60dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:onClick="pastOrder3"
+                android:src="@drawable/ic_reorder" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="ORDER ID.XXX XXX XX/XX/XXXX"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_marginLeft="60dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:onClick="pastOrder4"
+                android:src="@drawable/ic_reorder" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="ORDER ID.XXX XXX XX/XX/XXXX"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_marginLeft="60dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:onClick="pastOrder5"
+                android:src="@drawable/ic_reorder" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
+
+    <android.support.design.widget.NavigationView
+
+        app:headerLayout="@layout/header"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/nav_view"
+        app:itemTextColor="@color/darkgray"
+        app:itemIconTint="@color/darkgray"
+        app:menu="@menu/drawermenu"
+        android:layout_gravity="start">
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+

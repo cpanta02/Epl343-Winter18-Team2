@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name"><font size="14">Φαρμακείο Γ. Γεωργίου</font></string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+</resources>

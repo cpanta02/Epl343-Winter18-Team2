@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home_page" android:title="Αρχική Σελίδα"
+        android:icon="@drawable/ic_home_black_24dp"/>
+    <item android:id="@+id/calendar" android:title="Ημερολόγιο"
+        android:icon="@drawable/ic_calendar_black_24dp"/>
+    <item android:id="@+id/product" android:title="Προϊόντα"
+        android:icon="@drawable/ic_products"/>
+    <item android:id="@+id/services" android:title="Υπηρεσίες"
+        android:icon="@drawable/ic_services"/>
+    <item android:id="@+id/chat" android:title="Chat"
+        android:icon="@drawable/ic_chat"/>
+    <item android:id="@+id/communication" android:title="Επικοινωνία"
+        android:icon="@drawable/ic_communication_24dp"/>
+    <item android:id="@+id/overnight_pharmacies" android:title="Διανυκτερεύοντα"
+        android:icon="@drawable/ic_pharmacy"/>
+
+</menu>
